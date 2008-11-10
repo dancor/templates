@@ -1,0 +1,24 @@
+import FUtil
+import System.Console.GetOpt
+
+data Options = Options {
+  opt :: 
+}
+
+defOpts :: Options
+defOpts = Options {
+  opt = 
+}
+
+options :: [OptDescr (Options -> Options)]
+options = [
+  Option "" [""] (ReqArg (\ a o -> o {opt = read a}) "")
+    ""
+  Option "" [""] (OptArg (\ a o -> o {opt = read a}) "")
+    ""
+  Option "" [""] (NoArg (\ o -> o {opt = }) "")
+    ""
+  ]
+
+main = do
+  (opts, args) <- doArgs "" defOpts options
