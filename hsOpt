@@ -16,7 +16,7 @@ options = [
     ""
   Option "" [""] (OptArg (\ a o -> o {opt = read a}) "")
     ""
-  Option "" [""] (NoArg (\ o -> o {opt = }) "")
+  Option "" [""] (NoArg (\ o -> o {opt = }))
     ""
   ]
 
