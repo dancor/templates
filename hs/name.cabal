@@ -1,4 +1,4 @@
-name:            <name>
+name:            <name_no_underscores>
 version:         0.1
 license:         BSD3
 license-file:    LICENSE
